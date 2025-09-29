@@ -1,5 +1,8 @@
-<manifest>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Supports 16KB page size for Android 15+ compatibility -->
+    <uses-feature android:name="android.hardware.ram.low" android:required="false" />
+    
     <application />
 
 </manifest>
