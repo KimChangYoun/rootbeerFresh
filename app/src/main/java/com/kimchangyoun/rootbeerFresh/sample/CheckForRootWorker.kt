@@ -2,7 +2,6 @@ package com.kimchangyoun.rootbeerFresh.sample
 
 import android.content.Context
 import com.kimchangyoun.rootbeerFresh.RootBeer
-import com.kimchangyoun.rootbeerFresh.util.Utils
 
 class CheckForRootWorker(context: Context) {
 
@@ -21,7 +20,6 @@ class CheckForRootWorker(context: Context) {
         RootItemResult("For RW Paths", rootBeer.checkForRWPaths()),
         RootItemResult("Dangerous Props", rootBeer.checkForDangerousProps()),
         RootItemResult("Root via native check", rootBeer.checkForRootNative()),
-        RootItemResult("SE linux Flag Is Enabled", !Utils.isSelinuxFlagInEnabled()),
         RootItemResult("Magisk specific checks", rootBeer.checkForMagiskBinary()),
 		RootItemResult("Magisk UDS check", rootBeer.checkForMagiskNative())
     )
